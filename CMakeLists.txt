@@ -3,7 +3,7 @@
 cmake_minimum_required(VERSION 3.15) # required at the top
 include_guard(GLOBAL) # prevent configuring the same file multiple times
 
-set(ACTIVE_TARGET_NAME "") # Add the name of the target between the quotations
+set(ACTIVE_TARGET_NAME "com_exe_practice") # Add the name of the target between the quotations
 
 # Add the names of the header files in quotations
 set(ACTIVE_HEADER_FILES
@@ -12,7 +12,7 @@ set(ACTIVE_HEADER_FILES
 
 # Add the names of the sources files in quotations
 set(ACTIVE_SOURCE_FILES
-
+main
 )
 
 ##################################################################################
