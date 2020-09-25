@@ -1,0 +1,30 @@
+// internal.hpp
+// Created by: Jacob Hootman
+// Date: June 8, 2020
+
+/*
+Copyright 2020 Jacob Hootman. All Rights Reserved.
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+*/
+
+#ifndef CPP_TEMPLATE_INTERNAL
+#define CPP_TEMPLATE_INTERNAL 1 // Indicates that the internal header file has been included
+
+#ifdef HACK_OS_WINDOWS
+#ifdef CPP_TEMPLATE_STATIC
+#define CPP_TEMPLATE_API
+#else
+#ifdef CPP_TEMPLATE_BUILD
+#define CPP_TEMPLATE_API __declspec(dllexport)
+#else
+#define CPP_TEMPLATE_API __declspec(dllimport)
+#endif // CPP_TEMPLATE_BUILD
+#endif // CPP_TEMPLATE_STATIC
+#else
+#define CPP_TEMPLATE_API	
+#endif // HACK_OS_WINDOWS
+
+#endif // !CPP_TEMPLATE_INTERNAL

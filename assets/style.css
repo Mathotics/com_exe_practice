@@ -1,0 +1,28 @@
+/* Menu bar attributes */
+.menubar {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.menubar a {
+	text-decoration: none;
+}
+
+/* Title Attributes */
+.title {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 30;
+	font-weight: bold;
+}
+
+
+/* Content Attributes */
+.content {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Copyright section */
+.copyright {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12;
+	text-align: center;
+}
